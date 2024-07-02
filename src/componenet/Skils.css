@@ -1,0 +1,30 @@
+.domine{
+    border-bottom: 1.5px solid #D1D7DC;
+    /* padding-right: 20px; */
+    
+}
+.domine_name{
+    padding: 8px 4px;
+}
+.domine_name:hover{
+    color: black;
+}
+.domine_name{
+    border-bottom: 2px solid transparent;
+}
+.domine_name:hover{
+    border-bottom: 2px solid black;
+}
+.cource{
+    padding: 16px 24px;
+}
+.all-cource,.cource__video{
+    scrollbar-width: none;
+}
+.cources{
+  
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.next{
+    border: 1px solid;
+}
