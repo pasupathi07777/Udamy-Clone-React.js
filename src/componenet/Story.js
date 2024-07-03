@@ -1,27 +1,15 @@
 import React from 'react'
 import './Story.css'
-import imgOne from '../img/stories/story-1.png'
-import title from '../img/stories/title.svg'
+// import imgOne from '../img/stories/story-1.png'
 
 
 
-const Story = () => {
-    let story = {
-        // title: ["Booz ", "Allen ", "Hamilton"],
-        title: title,
-        about: "Booz Allen Hamilton Unlocks Talent Retention and Productivity Through Upskilling",
-        percentage: {
-            perOne: "93%",
-            peroneAbout: "retention rate among participating employees",
-            perTwo: "65%",
-            perTwoAbout: "of learners noted a positive impact on their productivity",
-        },
-        btn: "Read full story ->"
 
-    }
+const Story = ({story}) => {
+   
     return (
         <main className='flex px-[24px] py-[32px] bg-[#F7F9FA] flex-col sm:flex-row  relative gap-4 sm:gap-0'>
-            <div className="swctionOne flex flex-col justify-center gap-5 pr-[24px] order-2 sm:order-1  ">
+            <div className="swctionOne flex flex-col justify-center gap-5 sm:pr-[24px] order-2 sm:order-1  ">
                 <div className="titles flex  ">
                     <img src={story.title} alt="" />
                     {/* {story.title.map((e, i) => {
@@ -46,7 +34,7 @@ const Story = () => {
                 </div>
             </div>
             <div className="sectionTwo order-1 sm:order-2 flex justify-center items-center ">
-                <img src={imgOne} alt="" srcset="" className='w-full h-full' />
+                <img src={story.img} alt="" srcSet="" className='w-full h-full' />
             </div>
 
         </main>

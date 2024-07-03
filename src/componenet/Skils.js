@@ -1,88 +1,16 @@
 import React from 'react'
 import './Skils.css'
-import img1 from '../img/webdevelopment/web-1.png'
-
-const Skils = () => {
-    let skil = {
-        title: "All the skills you need in one place",
-        sub_title: "From critical skills to technical topics, Udemy supports your professional development.",
-        domine__name: ["web development", "IT Certification", " Leadership", "Data Science", "Communication", "Buisiness Analytics & Intelligencw"],
-        // web development
-        web_development: [{ cource: "Web Development", learners: "13.3M+ learners" }, { cource: "JavaScript", learners: "16.6M+ learners" }, { cource: "React JSt", learners: "7M+ learners" }, { cource: "Angular", learners: "4M+ learners" }, { cource: "Java", learners: "15.5M+ learners" }, { cource: "Android Development", learners: "8M+ learners" }, { cource: "iOS Development", learners: "4M+ learners" }, { cource: "CSS", learners: "9M+ learners" }],
-
-        // web development cources 
-        courceVideo: {
-            webDevelopment: [
-                {
-                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
-                    author: "Dr.Angela Yu Developer and Lead",
-                    rating: 4.7,
-                    ratingList: 386523,
-                    price: "3,099",
-                    current: true,
-                    thumnile: img1
 
 
-                },
-                {
-                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
-                    author: "Dr.Angela Yu Developer and Lead",
-                    rating: 4.7,
-                    ratingList: 386523,
-                    price: "3,099",
-                    current: true,
-                    thumnile: img1
-
-
-                },
-                {
-                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
-                    author: "Dr.Angela Yu Developer and Lead",
-                    rating: 4.7,
-                    ratingList: 386523,
-                    price: "3,099",
-                    current: true,
-                    thumnile: img1
-
-
-                },
-                {
-                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
-                    author: "Dr.Angela Yu Developer and Lead",
-                    rating: 4.7,
-                    ratingList: 386523,
-                    price: "3,099",
-                    current: true,
-
-                    thumnile: img1
-
-
-                },
-                {
-                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
-                    author: "Dr.Angela Yu Developer and Lead",
-                    rating: 4.7,
-                    ratingList: 386523,
-                    price: "3,099",
-                    current: true,
-
-                    thumnile: img1
-
-
-                },
-            ]
-
-        }
-
-
-    }
+const Skils = ({skil}) => {
+   
     return (
-        <main className='px-[24px] py-[48px]'>
-            <div className="title">
+        <main className='py-[0px]'>
+            <div className="titles px-[24px] pt-[32px]  ">
                 <h1 className='text-[32px] font-semibold'>{skil.title}</h1>
-                <p className='text-[#6A6F8A]'>{skil.sub_title}</p>
+                <p className='text-[#6A6F8A] '>{skil.sub_title}</p>
             </div>
-            <div className="domine mt-10 flex gap-5 text-[#6A6F8A] font-semibold  overflow-x-auto  ">
+            <div className="domine mt-10 flex gap-5 text-[#6A6F8A] font-semibold  overflow-x-auto mx-[24px]   ">
                 {
                     skil.domine__name.map((e, i) => {
                         return <div className="domine_name flex-shrink-0 " key={i}>{e}
@@ -93,11 +21,13 @@ const Skils = () => {
                 }
 
             </div>
-            <div className="all-cource flex overflow-x-auto py-[30px] overflow-hidden flex-col bg-[#F7F9FA]  ">
-                <div className="cource-title w-fit flex gap-5  ">
+
+            <div className="all-cource flex  py-[30px] overflow-hidden flex-col bg-[#F7F9FA]  ">
+               <div className=" w-full overflow-hidden px-[24px] ">
+               <div className="cource-title w-full flex gap-5 overflow-x-auto overflow-hidden      ">
                     {
                         skil.web_development.map((e, i) => {
-                            return <div className="cource flex-shrink-0 bg-[#E4E8EB] rounded-full text-center cursor-pointer" key={i}>
+                            return <div className="w-fit cource flex-shrink-0 bg-[#E4E8EB] rounded-full text-center cursor-pointer" key={i}>
                                 <div className="cource__name font-semibold">
                                     {e.cource}
                                 </div>
@@ -109,17 +39,19 @@ const Skils = () => {
                         })
                     }
                 </div>
-                <div className="cource__video py-10 overflow-x-auto p-0">
-                    <div className="div flex gap-5  ">
-                        {skil.courceVideo.webDevelopment.map((e) => {
-                            return <div className="cources rounded overflow-hidden flex-shrink-0    max-w-[300px] bg-white  ">
+               </div>
+
+                <div className="cource__video py-10 overflow-x-auto px-[23px] ">
+                    <div className="all-cources flex gap-5 overflow-x-auto px-[1px]  ">
+                        {skil.courceVideo.webDevelopment.map((e,i) => {
+                            return <div className="cources rounded overflow-hidden flex-shrink-0    max-w-[300px] bg-white  " key={i}>
                                 <div className="thumnile"><img src={e.thumnile} alt="" /></div>
                                 <div className='p-4 flex flex-col gap-1'>
                                     <div className="title font-semibold"><h2>{e.title.slice(0, 33)}</h2></div>
                                     <div className="author text-[14px] text-[#6A6F73]"><p>{e.author}</p>
                                     </div>
                                     <div className='flex items-center gap-1'>
-                                        <div className="rating text-[14px] font-semibold">{e.rating} ⭐⭐⭐⭐ </div>
+                                        <div className="rating text-[14px] font-semibold">{e.rating} {e.ratingStar} </div>
                                         <div className="rating-count text-[12px] text-[#6A6F73] ">
                                             {e.ratingList}
                                         </div>
@@ -134,8 +66,8 @@ const Skils = () => {
 
 
                 </div>
-                <div className="next w-fit p-3 font-semibold">
-                    <a href="#"> Show all Web Development cources</a>
+                <div className="next sm:w-fit p-3 font-semibold mx-[24px] text-center">
+                    <a href="#"> {skil.btn}</a>
                 </div>
             </div>
 

@@ -3,7 +3,16 @@
     border: none;
     outline: none;
 }
-
+/* Hide scrollbars while allowing scrolling */
+.banner {
+    overflow: auto; /* Ensure the element is scrollable */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .banner::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
 @media  (min-width:1000px) {
     /* md:w-[440px] */
     .banner-box{

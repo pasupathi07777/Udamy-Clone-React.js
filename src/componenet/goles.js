@@ -1,37 +1,24 @@
 import React from 'react'
 import './goles.css'
-import iconOne from '../img/goles/icon-1.png'
-import iconTwo from '../img/goles/icon-2.png'
-import iconThree from '../img/goles/icon-3.png'
-import iconFour from '../img/goles/icon-4.png'
-import imgOne from '../img/goles/img-1.png'
 
 
 
-const Goles = () => {
 
-    let goles = {
-        title: "Learning focused on your goals",
-        foucus: [
-            { title: "Hands-on training", para: "Upskill effectively with AI-powered coding exercises, practice tests, skills assessments, labs, and workspaces.", logo: iconOne },
-            { title: "Certification prep", para: "Prep for industry-recognized certifications by solving real-world challenges and earn badges along the way.", logo: iconTwo },
-            { title: "Insights and analytics", para: "Fast-track goals with advanced insights plus a dedicated customer success team to help drive effective learning.", logo: iconThree },
-            { title: "Customizable content", para: "Create tailored learning paths for team and organization goals and even host your own content and resources.", logo: iconFour }]
+const Goles = ({ goles }) => {
 
 
-    }
     return (
-        <main className='bg-[#F7F9FA] px-[24px] py-[32px]'>
-            <div className="box-one">
-                {/* <h1 className='font-semibold text-[32px]'>{goles.title}</h1> */}
+        <main className='bg-[#F7F9FA]  py-[32px]'>
+            <div className="box-one px-[24px] ">
+                <h1 className='font-semibold text-[32px]'>{goles.title}</h1>
 
             </div>
-            <div className="box-two flex">
-                <div className="section-one flex flex-col gap-4  justify-start ">
-                    <h1 className='font-semibold text-[32px]'>{goles.title}</h1>
+            <div className="box-two flex flex-col md:flex-row gap-4 md:gap-0  ">
+                <div className="section-one flex flex-col gap-4  justify-start order-2 md:order-1 mx-[23px] px-[1px] ">
+                    <h1 className='font-semibold text-[32px] hidden md:block'>{goles.title}</h1>
                     {goles.foucus.map((e, i) => {
-                        return <div className="box flex p-[24px] gap-3 rounded h-[155px] justify-center items-center mt-3 ">
-                            <div className="sec-one flex justify-center items-center">
+                        return <div className="box  flex p-[24px] gap-3 rounded md:min-h-[155px] justify-center items-center mt-3 flex-shrink-0 ">
+                            <div className="sec-one  justify-center items-center hidden md:flex">
                                 <img src={e.logo} className='w-32' alt="" />
 
                             </div>
@@ -45,8 +32,8 @@ const Goles = () => {
 
 
                 </div>
-                <div className="section-one flex justify-center items-end">
-                    <img src={imgOne} className='w-[90%]' alt="" srcset="" />
+                <div className="section-one flex justify-center items-end order-1 md:order-2">
+                    <img src={goles.img} className='w-[90%]' alt="" srcset="" />
 
                 </div>
 

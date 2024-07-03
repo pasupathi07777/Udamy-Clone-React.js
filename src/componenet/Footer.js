@@ -1,34 +1,16 @@
 import React from 'react'
 import './Footer.css'
-import imgOne from '../img/footer/img-1.svg'
-import imgTwo from '../img/footer/img-2.svg'
-import imgThree from '../img/footer/img-3.svg'
-import imgFour from '../img/footer/img-4.svg'
-import imgFive from '../img/footer/img-5.svg'
-import img from '../img/footer/udamy.svg'
-
-const Footer = () => {
-    let footer = {
-        WebsiteName: img,
-        copyRight: "© 2024 Udemy, Inc.",
-        title: "Top companies choose Udemy Business to build in-demand career skills.",
-        images: [imgOne, imgTwo, imgThree, imgFour, imgFive],
-        allHeading: [
-            { listOne: ["Udemy Business", "Teach on Udemy", "Get the app", "About us", "Contact us"] },
-            { listOne: ["Careers", "Blog", "Help and Support", "Affilate", "Investors"] },
-            { listOne: ["Twrms", "Privacy policy", "Cookie settings", "Sitemap", "Accessibility statement"] },
 
 
-        ],
-        langrage: "English"
-    }
+const Footer = ({footer}) => {
+   
     return (
         <main className='main bg-[#2D2F31]   text-[#FFFFFF]  text-[18px]'>
             <div className="main__section-one flex flex-col sm:flex-row gap-4 sm:gap-2 py-[24px] px-[24px] font-semibold ">
                 <div className="main__section-one__title w-full">{footer.title}</div>
                 <div className='flex gap-2 w-full justify-between'>
                     {footer.images.map((e, i) => {
-                        return <div className="main__section-one__image"><img src={e} className='' alt="" srcset="" /></div>
+                        return <div key={i} className="main__section-one__image"><img src={e} className='' alt="" srcset="" /></div>
                     })}
 
                 </div>
@@ -37,7 +19,7 @@ const Footer = () => {
                 <div className="main__section-two__s1 flex flex-col sm:flex-row gap-6 sm:gap-0 ">
                     <div className=" flex w-full justify-between flex-col sm:flex-row gap-2 sm:gap-0 order-2 sm:order-1">
                         {footer.allHeading.map((e, i) => {
-                            return <div className=" flex flex-col gap-2" key={i}>
+                            return <div key={i} className=" flex flex-col gap-2" key={i}>
                                 {e.listOne.map((s, h) => {
                                     return <p key={h}>{s}</p>
 
