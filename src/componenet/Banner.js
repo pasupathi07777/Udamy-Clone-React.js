@@ -4,20 +4,52 @@ import "./Banner.css";
 
 
 
-const Banner = ({banners}) => {
-   
+const Banner = ({ banners }) => {
+
+
+    let leftscroll = () => {
+        let box = document.querySelector(".banner")
+        let width = document.querySelector(".banner-img").clientWidth
+        box.scrollLeft += width
+
+    }
+    let rightscroll = () => {
+        let box = document.querySelector(".banner")
+        let width = document.querySelector(".banner-img").clientWidth
+        box.scrollLeft -= width
+
+    }
+
+
 
     return (
-        <main className=" w-full h-fit flex ">
-            <div className="banner flex w-fit h-full overflow-x-auto ">
-                {banners.map((item, index) => (
-                    <div className="img-box flex-shrink-0 relative h-[20%] w-full min-h-[250px]  " key={index}>
+        <main className=" w-full h-fit flex relative ">
+            <div className="icons absolute flex justify-between items-center p-2 w-full h-[250px]  sm:h-[350px] md:h-[400px] z-10 ">
+                <div className="leftscroll" onClick={leftscroll}>
+                    {banners.lerfArrow}
+                </div>
+                <div className="leftscroll" onClick={rightscroll}>
+                   {banners.rightArrow}
+                </div>
+
+
+
+
+            </div>
+
+            <div className="banner flex w-fit h-full overflow-x-scroll scroll-smooth    ">
+
+
+                {banners.banner.map((item, index) => (
+                    <div className="img-box flex-shrink-0 relative w-full  min-h-[250px] h-[20%]      " key={index}>
+
+
                         <img
                             src={item.image}
                             alt="Banner"
-                            className="w-full h-full min-h-[250px] object-cover"
+                            className="banner-img w-full h-[250px]  sm:h-[350px] md:h-[400px] object-cover"
                         />
-                        <div className="banner-box sm:bg-white w-full h-fit sm:w-[340px] p-[24px] sm:shadow-xl sm:absolute top-[30px] left-[50px] cursor-pointer flex flex-col">
+                        <div className="banner-box sm:bg-white w-full h-fit sm:w-[340px] p-[24px] sm:shadow-xl sm:absolute top-[30px] left-[70px] cursor-pointer flex flex-col">
                             <h1 className="text-[24px] font-semibold">
                                 {item.title}
                             </h1>
