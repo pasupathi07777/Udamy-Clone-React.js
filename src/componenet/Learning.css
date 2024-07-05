@@ -1,0 +1,19 @@
+.rightscroll{
+    position: absolute;
+    top: 50%;
+    right: -20px;
+   
+    transform: translate(-50%,-50%);
+}
+.leftscroll{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    left: 35px;
+ 
+    transform: translate(-50%,-50%);
+}
+.main{
+    scrollbar-width: none;
+}
+

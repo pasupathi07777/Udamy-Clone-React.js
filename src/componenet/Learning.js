@@ -1,16 +1,74 @@
-import React from 'react'
+
+
+import React, { useState } from 'react'
+import './Learning.css'
 
 
 
 
 const Learning = ({ learning }) => {
+
+    // cons [sum, setsum] = useState(0)
+    const [sum, setsum] = useState(0);
+    let leftScroll = () => {
+        console.log("click")
+        let box = document.querySelector(".main-box")
+        let width = document.querySelector(".all-cources").clientWidth
+        console.log(width)
+        box.scrollLeft -= width + 10
+        setsum(sum - width)
+
+    }
+    let rightScroll = () => {
+        let box = document.querySelector(".main-box")
+        console.log("click")
+        let width = document.querySelector(".all-cources").clientWidth
+        console.log(width)
+        box.scrollLeft += width + 10
+        setsum(sum + width)
+
+    }
     return (
         <main className=' py-[32px]'>
-            <h1 className='font-semibold  text-[24px] px-[24px]'>{learning.title}</h1>
-            <div className="cource__video overflow-x-auto p-0 mx-[23px] mt-4 ">
-                <div className="div flex gap-5 w-fit px-[1px] py-[1px]   ">
-                    {learning.webDevelopment.map((e) => {
-                        return <div className="cources rounded overflow-hidden flex-shrink-0    max-w-[300px] bg-white  ">
+
+            <h1 className='font-semibold  text-[24px] px-[24px] '>{learning.title}</h1>
+            <div className="cource__video  p-0  mt-4 relative px-[23px]  ">
+                {/* {sum > 10 && <div className="leftscroll  absolute  z-50 hidden sm:block" onClick={leftScroll} >
+                    {learning.lerfArrow}
+
+                </div>}
+                <div className="rightscroll absolute  z-50 hidden sm:block" onClick={rightScroll} >
+                    {learning.rightArrow}
+
+                </div> */}
+
+                {
+                    learning.arrow.map((e, i) => {
+                        if (i === 0) {
+                            return (
+                                sum > 10 && (
+                                    <div className="leftscroll absolute z-50 hidden sm:block" onClick={leftScroll} key={i}>
+                                        {e}
+                                    </div>
+                                )
+                            );
+                        } else {
+                            return (
+                                <div className="rightscroll absolute z-50 hidden sm:block" onClick={rightScroll} key={i}>
+                                    {e}
+                                </div>
+                            );
+                        }
+                    })
+                }
+
+
+
+
+                <div className="main-box div flex gap-5 w-full px-[1px] py-[1px] overflow-x-scroll relative scroll-smooth ">
+
+                    {learning.webDevelopment.map((e,i) => {
+                        return <div key={i} className="all-cources rounded  flex-shrink-0    max-w-[300px] bg-white  ">
                             <div className="thumnile"><img src={e.thumnile} alt="" /></div>
                             <div className='p-4 flex flex-col gap-1'>
                                 <div className="title font-semibold"><h2>{e.title.slice(0, 33)}</h2></div>
@@ -39,3 +97,6 @@ const Learning = ({ learning }) => {
 }
 
 export default Learning
+
+
+

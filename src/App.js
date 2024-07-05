@@ -23,27 +23,31 @@ import {achieving} from './server/acheivement.js'
 import {trends} from './server/trends.js'
 import {treanding} from './server/trending.js'
 import {story} from './server/story.js'
+import {icons} from './server/story.js'
 import {footer} from './server/footer.js'
 import {learning} from './server/learning.js'
 import {goles} from './server/goles.js'
+import DemoSkils from './componenet/DemoSkils.js';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar datails={datails} />
-      <Banner banners={banners}/>
-      <Skils skil={skil}/>
-      <Companies detail={detail} /> 
+      {/* <Navbar datails={datails} /> 
+    <Banner banners={banners}/>  */}
+     <Skils skil={skil}/>
+    
+      {/* <Companies detail={detail} />  */}
      
      
-      <Goles goles={goles} />
-      <Plans plan={plan}/>
-      <Achieving achieving={achieving} />
-      <Trends trends={trends}/>
-      <Trending treanding={treanding}/>
-      <Learning learning={learning}/>
-      <Story story={story}/>
-      <Footer footer={footer}/>
+      {/* <Goles goles={goles} /> */}
+      {/* <Plans plan={plan}/> */}
+      {/* <Achieving achieving={achieving} /> */}
+      {/* <Trends trends={trends}/> */}
+      {/* <Trending treanding={treanding}/> */}
+      {/* <Learning learning={learning}/>
+      <Story story={story} icons={icons}/> */}
+      {/* <Footer footer={footer}/> */}
      
     </div>
   );

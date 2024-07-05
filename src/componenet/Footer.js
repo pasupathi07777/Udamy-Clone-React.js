@@ -10,7 +10,7 @@ const Footer = ({footer}) => {
                 <div className="main__section-one__title w-full">{footer.title}</div>
                 <div className='flex gap-2 w-full justify-between'>
                     {footer.images.map((e, i) => {
-                        return <div key={i} className="main__section-one__image"><img src={e} className='' alt="" srcset="" /></div>
+                        return <div key={i} className="main__section-one__image"><img src={e} className='' alt="" srcSet="" /></div>
                     })}
 
                 </div>
@@ -19,7 +19,7 @@ const Footer = ({footer}) => {
                 <div className="main__section-two__s1 flex flex-col sm:flex-row gap-6 sm:gap-0 ">
                     <div className=" flex w-full justify-between flex-col sm:flex-row gap-2 sm:gap-0 order-2 sm:order-1">
                         {footer.allHeading.map((e, i) => {
-                            return <div key={i} className=" flex flex-col gap-2" key={i}>
+                            return <div key={i} className=" flex flex-col gap-2" >
                                 {e.listOne.map((s, h) => {
                                     return <p key={h}>{s}</p>
 
@@ -41,7 +41,7 @@ const Footer = ({footer}) => {
 
             </div>
             <div className="main__section-two flex flex-col sm:flex-row justify-between px-[24px] pb-[24px] gap-3">
-                <img src={footer.WebsiteName} alt="" className='w-28' srcset="" />
+                <img src={footer.WebsiteName} alt="" className='w-28' srcSet=''  />
                 <p className='text-[14px]'>{footer.copyRight}</p>
 
             </div>

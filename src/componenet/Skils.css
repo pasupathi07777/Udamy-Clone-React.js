@@ -1,6 +1,6 @@
 .domine {
     border-top: none;
-    border-bottom: 1.5px solid #D1D7DC;
+    /* border-bottom: 1.5px solid #D1D7DC; */
     /* padding-right: 20px; */
 
 }
@@ -38,12 +38,16 @@
 }
 
 .domine_name {
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid #D1D7DC;
+   
+}
+.domine{
+    border-top: 1px solid #D1D7DC;
 }
 
-.domine_name:hover {
+/* .domine_name:hover {
     border-bottom: 2px solid black;
-}
+} */
 
 .cource {
     padding: 16px 24px;
@@ -62,3 +66,6 @@
 .next {
     border: 1px solid;
 }
+
+/*  */
+

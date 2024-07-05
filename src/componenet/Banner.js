@@ -7,16 +7,18 @@ import "./Banner.css";
 const Banner = ({ banners }) => {
 
 
-    let leftscroll = () => {
+    let left = () => {
+        let box = document.querySelector(".banner")
+        let width = document.querySelector(".banner-img").clientWidth
+      
+        box.scrollLeft -= width
+
+    }
+    let right = () => {
         let box = document.querySelector(".banner")
         let width = document.querySelector(".banner-img").clientWidth
         box.scrollLeft += width
-
-    }
-    let rightscroll = () => {
-        let box = document.querySelector(".banner")
-        let width = document.querySelector(".banner-img").clientWidth
-        box.scrollLeft -= width
+       
 
     }
 
@@ -24,13 +26,13 @@ const Banner = ({ banners }) => {
 
     return (
         <main className=" w-full h-fit flex relative ">
-            <div className="icons absolute flex justify-between items-center p-2 w-full h-[250px]  sm:h-[350px] md:h-[400px] z-10 ">
-                <div className="leftscroll" onClick={leftscroll}>
+            <div className="icons absolute flex justify-between items-center p-2 w-full h-[250px]  sm:h-[350px] md:h-[400px] z-50  ">
+                <div className="left" onClick={left}>
                     {banners.lerfArrow}
                 </div>
-                <div className="leftscroll" onClick={rightscroll}>
+                <div className="left" onClick={right}>
                    {banners.rightArrow}
-                </div>
+                   </div>
 
 
 

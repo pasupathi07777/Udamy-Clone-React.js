@@ -10,10 +10,10 @@ const Skils = ({skil}) => {
                 <h1 className='text-[32px] font-semibold'>{skil.title}</h1>
                 <p className='text-[#6A6F8A] '>{skil.sub_title}</p>
             </div>
-            <div className="domine mt-10 flex gap-5 text-[#6A6F8A] font-semibold  overflow-x-auto mx-[24px]   ">
+            <div className="domine mt-10 flex  flex-col sm:flex-row text-black text-[19px] md:text-[#6A6F8A] font-semibold  overflow-x-auto mx-[24px]    ">
                 {
                     skil.domine__name.map((e, i) => {
-                        return <div className="domine_name flex-shrink-0 " key={i}>{e}
+                        return <div className="domine_name  flex-shrink-0 pt-[16px] " key={i}>{e}
 
                         </div>
 
@@ -22,7 +22,7 @@ const Skils = ({skil}) => {
 
             </div>
 
-            <div className="all-cource flex  py-[30px] overflow-hidden flex-col bg-[#F7F9FA]  ">
+            <div className="all-cource flex  py-[30px] overflow-hidden flex-col bg-[#F7F9FA] hidden  ">
                <div className=" w-full overflow-hidden px-[24px] ">
                <div className="cource-title w-full flex gap-5 overflow-x-auto overflow-hidden      ">
                     {

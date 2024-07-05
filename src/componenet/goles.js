@@ -17,7 +17,7 @@ const Goles = ({ goles }) => {
                 <div className="section-one flex flex-col gap-4  justify-start order-2 md:order-1 mx-[23px] px-[1px] ">
                     <h1 className='font-semibold text-[32px] hidden md:block'>{goles.title}</h1>
                     {goles.foucus.map((e, i) => {
-                        return <div className="box  flex p-[24px] gap-3 rounded md:min-h-[155px] justify-center items-center mt-3 flex-shrink-0 ">
+                        return <div key={i} className="box  flex p-[24px] gap-3 rounded md:min-h-[155px] justify-center items-center mt-3 flex-shrink-0 ">
                             <div className="sec-one  justify-center items-center hidden md:flex">
                                 <img src={e.logo} className='w-32' alt="" />
 
@@ -33,7 +33,7 @@ const Goles = ({ goles }) => {
 
                 </div>
                 <div className="section-one flex justify-center items-end order-1 md:order-2">
-                    <img src={goles.img} className='w-[90%]' alt="" srcset="" />
+                    <img src={goles.img} className='w-[90%]' alt="" srcSet="" />
 
                 </div>
 
