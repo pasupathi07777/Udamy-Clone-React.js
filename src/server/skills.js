@@ -1,10 +1,21 @@
 import img1 from '../img/webdevelopment/web-1.png'
+let left = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+</svg>
+let right = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8 ">
+    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+
+
+
+
 export let skil = {
     title: "All the skills you need in one place",
     sub_title: "From critical skills to technical topics, Udemy supports your professional development.",
+    arrow: [left, right],
 
 
-    courceData: [
+    courceData: [ 
         {
             title: "web development",
             allTopics: [{ cource: "Web Development", learners: "13.3M+ learners" }, { cource: "JavaScript", learners: "16.6M+ learners" }, { cource: "React JSt", learners: "7M+ learners" }, { cource: "Angular", learners: "4M+ learners" }, { cource: "Java", learners: "15.5M+ learners" }, { cource: "Android Development", learners: "8M+ learners" }, { cource: "iOS Development", learners: "4M+ learners" }, { cource: "CSS", learners: "9M+ learners" }],
@@ -142,7 +153,7 @@ export let skil = {
             ]
         },
         {
-            title:"Leadership",
+            title: "Leadership",
             allTopics: [{ cource: "Leadership", learners: "2M+ learners" }, { cource: "Management Skills", learners: "1M+ learners" }, { cource: "Project Management", learners: "3M+ learners" }, { cource: "Personal Productivity", learners: "2M+ learners" }, { cource: "Emotional Intelligence", learners: "955,600+ learners" }, { cource: "Digital Transformation", learners: "322,100+ learners" }, { cource: "Business Strategy", learners: "1M+ learners" }, { cource: "Conflict Management", learners: "233,600+ learners" }],
             Videos: [
                 {
@@ -212,7 +223,7 @@ export let skil = {
 
         },
         {
-            title:"Data Science",
+            title: "Data Science",
             allTopics: [{ cource: "Data Science", learners: "7M+ learnerss" }, { cource: "Python", learners: "44.4M+ learners" }, { cource: "Machine Learning", learners: "8M+ learners" }, { cource: "ChatGPT", learners: "3M+ learners" }, { cource: "Deep Learning", learners: "2M+ learners" }, { cource: "Artificial Intelligence", learners: "3M+ learners" }, { cource: "Statistics", learners: "1M+ learners" }, { cource: "Natural Language Processing", learners: "763,300+ learners" }],
             Videos: [
                 {
@@ -282,7 +293,7 @@ export let skil = {
 
         },
         {
-            title:"Communication",
+            title: "Communication",
             allTopics: [{ cource: "Communication Skills", learners: "2M+ learners" }, { cource: "Presentation Skills", learners: "1M+ learners" }, { cource: "Public Speaking", learners: "3M+ learners" }, { cource: "Writing", learners: "1M+ learners" }, { cource: "PowerPoint", learners: "2M+ learners" }, { cource: "Business Communication", learners: "368,400+ learners" }, { cource: "Business Writing", learners: "262,500+ learners" }, { cource: "Email Writing and Etiquette", learners: "372,700+ learners" }],
             Videos: [
                 {
@@ -353,7 +364,7 @@ export let skil = {
 
         },
         {
-            title:"Buisiness Analytics & Intelligencw",
+            title: "Buisiness Analytics & Intelligencw",
             allTopics: [{ cource: "Excel", learners: "17.7M+ learners" }, { cource: "SQL", learners: "7M+ learners" }, { cource: "Microsoft Power BI", learners: "4M+ learners" }, { cource: "Data Analysis", learners: "3M+ learners" }, { cource: "Business Analysis", learners: "1M+ learners" }, { cource: "Tableau", learners: "1M+ learners" }, { cource: "Data Visualization", learners: "1M+ learners" }, { cource: "Data Modeling", learners: "509,600+ learners" }],
             Videos: [
                 {

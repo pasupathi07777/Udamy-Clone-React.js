@@ -37,7 +37,7 @@ function App() {
     <Banner banners={banners}/>  */}
      <Skils skil={skil}/>
     
-      {/* <Companies detail={detail} />  */}
+      <Companies detail={detail} /> 
      
      
       {/* <Goles goles={goles} /> */}

@@ -60,9 +60,9 @@
     scrollbar-width: none;
 }
 
-.domine {
+.sha {
 
-    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .next {
@@ -71,13 +71,82 @@
 
 
 .videos,
-.all-topics {
-    /* For Firefox */
+.all-topics,
+.cou__one,
+.con__two,
+.domine,
+.arr,
+.shot,
+.fort{
+   
+   
     scrollbar-width: none;
 }
 
 .videos::-webkit-scrollbar,
-.all-topics::-webkit-scrollbar {
-    /* For Chrome, Safari, and other WebKit-based browsers */
+.all-topics::-webkit-scrollbar,
+.cou__one::-webkit-scrollbar,
+.con__two::-webkit-scrollbar,
+.domine::-webkit-scrollbar,
+.arr::-webkit-scrollbar,
+.shot::-webkit-scrollbar,
+.fort::-webkit-scrollbar{
+
     display: none;
 }
+
+.left{
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+
+
+@media (min-width:639px) {
+    .domine_names{
+        border-bottom:none;
+    
+    }
+    .domine{
+        border-top: none;
+        border-bottom: 1.5px solid #D1D7DC;
+        
+    }
+    
+}
+@media (min-width:1160px) {
+   .arr-1{
+    display: none;
+   }
+    
+}
+
+.cou__one,.con__two {
+    display: flex;
+    gap: 12px; 
+   
+    position: relative;
+}
+
+.arr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+/*  */
+
+
+
