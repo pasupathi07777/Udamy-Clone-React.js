@@ -67,7 +67,7 @@ const Skils = ({ skil }) => {
                 setarrowThree(arrowThree-10)
             } else if (direction === 'right') {
                 scr.scrollLeft += wid;
-                setarrowThree(arrowThree==10?10:arrowThree+10)
+                setarrowThree(arrowThree===10?10:arrowThree+10)
             }
 
 
@@ -77,22 +77,22 @@ const Skils = ({ skil }) => {
 
 
     return (
-        <main className="py-[32px] bg-[#F7F9FA] ">
+        <main className="py-[32px] bg-[#F7F9FA]  ">
             <div className="titles px-[24px]  flex flex-col gap-2">
                 <h1 className="text-[24px] sm:text-[32px] font-semibold">{skil.title}</h1>
                 <p className="text-[#6A6F8A] sm:text-[18px]">{skil.sub_title}</p>
             </div>
 
-            <div className="px-[24px] sm:px-0">
-                <div className=" domine sm:border-none  sm:mx-0    text-black   relative mt-5">
-                    <div className="fort  flex sm:mx-[24px]   sm:overflow-x-scroll scroll-smooth text-black  flex-col sm:gap-3 sm:flex-row  ">
+            <div className="px-[24px] sm:px-0 overflow-hidden h-fit mt-5 ">
+                <div className=" domine sm:border-none  sm:mx-0    text-black   relative ">
+                    <div className="fort overflow-y-hidden  flex sm:mx-[24px]   md:overflow-x-scroll  scroll-smooth text-black  flex-col sm:gap-3 sm:flex-row  ">
                         {skil.courceData.map((course, index) => {
                             const isVisible = position === index;
 
                             return (
-                                <div className={` domine_names flex-shrink-0 py-3 sm:py-0 flex flex-col gap-3 font-semibold ${isVisible ? '' : ''} relative`} key={index}>
+                                <div className={` domine_names flex-shrink-0  py-3 sm:py-0 h-fit  flex flex-col gap-3 font-semibold ${isVisible ? '' : ''} relative`} key={index}>
 
-                                    <div className={`titles  text-[19px] sm:text-[16px] text-[#6A6F73] flex justify-between sm:py-2 ${current === index ? 'sm:border-b-2 sm:border-black text-black' : 'border-none text-[#6A6F73]'}`} onClick={() => { handleSkillClick(index); }}>
+                                    <div className={`titles  text-[19px] sm:text-[16px]  text-[#6A6F73] flex justify-between sm:py-2 ${current === index ? 'sm:border-b-2 sm:border-black text-black' : 'border-none text-[#6A6F73]'}`} onClick={() => { handleSkillClick(index); }}>
                                         {course.title}
                                         <div className={`icon ${isVisible && 'rotate-180'} flex-shrink-0 transition-all duration-500 sm:hidden`}>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -113,7 +113,7 @@ const Skils = ({ skil }) => {
                                         <div className="videos flex gap-5 overflow-x-auto">
                                             {course.Videos.map((video, videoIndex) => (
                                                 <div className="cources rounded overflow-hidden flex-shrink-0 shadow-none sm:shadow-xl max-w-[300px] bg-white" key={videoIndex}>
-                                                    <div className="thumnile"><img src={video.thumnile} alt="" /></div>
+                                                    <div className="thumnile"><img className='h-[160px] w-full'  src={video.thumnile} alt="" /></div>
                                                     <div className="p-4 flex flex-col gap-1">
                                                         <div className="course-title font-semibold">
                                                             <h2 className="">{video.title.slice(0, 33)}</h2>
@@ -141,8 +141,7 @@ const Skils = ({ skil }) => {
                         })}
                     </div>
 
-                    {/* arr
-                         */}
+                    
 
 
                     <div className="arr  arr-1 hidden sm:flex absolute  justify-center items-center left-[-0px] p-1 text-blue-800 rounded-full">
@@ -176,7 +175,7 @@ const Skils = ({ skil }) => {
                                         // console.log(e)
                                         <div className={`arr  ${i === 0 ? "left-2" : "right-2"} flex justify-center items-center    bg-white text-black rounded-full`} key={i}>
 
-                                            <img src={e} className={`w-10 h-10 ${i===0?arrowOne>1?"block":"hidden":""}  `} onClick={() => handleScroll(index, `${i === 0 ? "left" : "right"}`)} alt="" srcset="" />
+                                            <img src={e} className={`w-10 h-10 ${i===0?arrowOne>1?"block":"hidden":""}  `} onClick={() => handleScroll(index, `${i === 0 ? "left" : "right"}`)} alt="" srcSet="" />
                                         </div>
 
 
@@ -191,7 +190,7 @@ const Skils = ({ skil }) => {
                                     {course.Videos.map((video, videoIndex) => (
 
                                         <div className={`cources rounded overflow-hidden flex-shrink-0 sha max-w-[300px] bg-white`} key={videoIndex}>
-                                            <div className="thumnile"><img src={video.thumnile} alt="" /></div>
+                                            <div className="thumnile"><img className='h-[160px] w-full'  src={video.thumnile}  alt="" /></div>
                                             <div className="p-4 flex flex-col gap-1">
                                                 <div className="course-title font-semibold">
                                                     <h2>{video.title.slice(0, 33)}</h2>
@@ -217,7 +216,7 @@ const Skils = ({ skil }) => {
                                         // console.log(e)
                                         <div className={`arr  ${i === 0 ? "left-2" : "right-2"} flex justify-center items-center    bg-white text-black rounded-full`} key={i}>
 
-                                            <img src={e} className={`w-10 h-10 ${i===0?arrowTwo>1?"block":"hidden":""} `} onClick={() => handlescrollTwo(index, `${i === 0 ? "left" : "right"}`)} alt="" srcset="" />
+                                            <img src={e} className={`w-10 h-10 ${i===0?arrowTwo>1?"block":"hidden":""} `} onClick={() => handlescrollTwo(index, `${i === 0 ? "left" : "right"}`)} alt="" srcSet="" />
                                         </div>
 
 
