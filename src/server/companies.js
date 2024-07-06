@@ -4,8 +4,10 @@ import imgThree from '../img/company/cisco.png'
 import imgFour from '../img/company/dell.png'
 import imgFive from '../img/company/google.png'
 import imgSix from '../img/company/samsung.png'
+import imgSeven from '../img/company/fb.png'
+import imgEight from '../img/company/chatgpt.png'
 
 export  let details = {
     title: "Trusted by over 15,000 companies and millions of learners around the world",
-    companyImages: [imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix]
+    companyImages: [imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix,imgSeven,imgEight]
 }

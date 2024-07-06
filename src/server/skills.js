@@ -1,10 +1,69 @@
 import img1 from '../img/webdevelopment/web-1.png'
-let left = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-</svg>
-let right = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8 ">
-    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-</svg>
+import img2 from '../img/webdevelopment/web-2.jpeg'
+import img3 from '../img/webdevelopment/web-3.jpeg'
+import img4 from '../img/webdevelopment/web-4.jpg'
+import img5 from '../img/webdevelopment/web-5.jpeg'
+import img6 from '../img/webdevelopment/web-6.jpeg'
+import img7 from '../img/webdevelopment/web-7.png'
+import img8 from '../img/webdevelopment/web-8.jpeg'
+
+// it
+import it1 from '../img/itt/it-1.jpeg'
+import it2 from '../img/itt/it-2.jpeg'
+import it3 from '../img/itt/it-3.jpeg'
+import it4 from '../img/itt/it-4.jpeg'
+import it5 from '../img/itt/it-5.png'
+import it6 from '../img/itt/it-6.jpeg'
+import it7 from '../img/itt/it-7.jpeg'
+import it8 from '../img/itt/it-8.jpeg'
+// leader 
+import le1 from '../img/leder/le-1.jpeg'
+import le2 from '../img/leder/le-2.jpeg'
+import le3 from '../img/leder/le-3.jpeg'
+import le4 from '../img/leder/le-4.jpeg'
+import le5 from '../img/leder/le-5.jpeg'
+import le6 from '../img/leder/le-6.jpeg'
+import le7 from '../img/leder/le-7.jpeg'
+import le8 from '../img/leder/le-8.jpeg'
+
+// data science 
+
+import sc1 from '../img/science/sc-1.jpeg'
+import sc2 from '../img/science/sc-2.jpeg'
+import sc3 from '../img/science/sc-3.jpeg'
+import sc4 from '../img/science/sc-4.png'
+import sc5 from '../img/science/sc-5.jpeg'
+import sc6 from '../img/science/sc-6.jpeg'
+import sc7 from '../img/science/sc-7.png'
+import sc8 from '../img/science/sc-8.jpeg'
+
+// communication
+
+import cm1 from '../img/communication/cm-1.jpeg'
+import cm2 from '../img/communication/cm-2.jpeg'
+import cm3 from '../img/communication/cm-3.jpeg'
+import cm4 from '../img/communication/cm-4.jpeg'
+import cm5 from '../img/communication/cm-5.jpeg'
+import cm6 from '../img/communication/cm-6.jpeg'
+import cm7 from '../img/communication/cm-7.jpeg'
+import cm8 from '../img/communication/cm-8.jpeg'
+
+// busseness 
+
+import bu1 from '../img/buss/be-1.jpeg'
+import bu2 from '../img/buss/be-2.jpeg'
+import bu3 from '../img/buss/be-3.jpeg'
+import bu4 from '../img/buss/be-4.jpeg'
+import bu5 from '../img/buss/be-5.jpeg'
+import bu6 from '../img/buss/be-6.jpeg'
+import bu7 from '../img/buss/be-7.jpeg'
+import bu8 from '../img/buss/be-8.jpeg'
+
+
+import { arrows as arr  } from "./arrow.js";
+
+
+
 
 
 
@@ -12,7 +71,9 @@ let right = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 
 export let skil = {
     title: "All the skills you need in one place",
     sub_title: "From critical skills to technical topics, Udemy supports your professional development.",
-    arrow: [left, right],
+    arrow: arr,
+
+
 
 
     courceData: [ 
@@ -25,7 +86,7 @@ export let skil = {
                     author: "Dr.Angela Yu Developer and Lead",
                     rating: 4.7,
                     ratingList: 386523,
-                    price: "3,09",
+                    price: "399",
                     current: true,
                     thumnile: img1,
                     ratingStar: "⭐⭐⭐⭐"
@@ -35,11 +96,75 @@ export let skil = {
                 {
                     title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
                     author: "Dr.Angela Yu Developer and Lead",
-                    rating: 4.7,
+                    rating: 4.2,
                     ratingList: 386523,
-                    price: "3,099",
+                    price: "499",
                     current: true,
-                    thumnile: img1,
+                    thumnile: img2,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.5,
+                    ratingList: 386523,
+                    price: "399",
+                    current: true,
+                    thumnile: img3,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.9,
+                    ratingList: 386523,
+                    price: "399",
+                    current: true,
+
+                    thumnile: img4,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.5,
+                    ratingList: 386523,
+                    price: "499",
+                    current: true,
+
+                    thumnile: img5,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.5,
+                    ratingList: 386523,
+                    price: "499",
+                    current: true,
+
+                    thumnile: img6,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.9,
+                    ratingList: 386523,
+                    price: "699",
+                    current: true,
+
+                    thumnile: img7,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -49,40 +174,16 @@ export let skil = {
                     author: "Dr.Angela Yu Developer and Lead",
                     rating: 4.7,
                     ratingList: 386523,
-                    price: "3,099",
-                    current: true,
-                    thumnile: img1,
-                    ratingStar: "⭐⭐⭐⭐"
-
-
-                },
-                {
-                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
-                    author: "Dr.Angela Yu Developer and Lead",
-                    rating: 4.7,
-                    ratingList: 386523,
-                    price: "3,099",
+                    price: "499",
                     current: true,
 
-                    thumnile: img1,
-                    ratingStar: "⭐⭐⭐⭐"
-
-
-                },
-                {
-                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
-                    author: "Dr.Angela Yu Developer and Lead",
-                    rating: 4.7,
-                    ratingList: 386523,
-                    price: "3,09",
-                    current: true,
-
-                    thumnile: img1,
+                    thumnile: img8,
                     ratingStar: "⭐⭐⭐⭐"
 
 
                 },
             ],
+            btn:"Show all it Certification cources"
         },
         {
             title: "IT Certification",
@@ -95,7 +196,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,09",
                     current: true,
-                    thumnile: img1,
+                    thumnile: it1,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -107,7 +208,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,099",
                     current: true,
-                    thumnile: img1,
+                    thumnile: it2,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -119,7 +220,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,099",
                     current: true,
-                    thumnile: img1,
+                    thumnile: it3,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -132,7 +233,7 @@ export let skil = {
                     price: "3,099",
                     current: true,
 
-                    thumnile: img1,
+                    thumnile: it4,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -145,12 +246,52 @@ export let skil = {
                     price: "3,09",
                     current: true,
 
-                    thumnile: img1,
+                    thumnile: it8,
                     ratingStar: "⭐⭐⭐⭐"
 
 
                 },
-            ]
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: it5,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: it6,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: it7,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+            ],
+            btn:"Show all it Certification cources"
         },
         {
             title: "Leadership",
@@ -163,7 +304,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,09",
                     current: true,
-                    thumnile: img1,
+                    thumnile: le1,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -175,7 +316,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,099",
                     current: true,
-                    thumnile: img1,
+                    thumnile: le2,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -187,7 +328,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,099",
                     current: true,
-                    thumnile: img1,
+                    thumnile: le3,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -200,7 +341,7 @@ export let skil = {
                     price: "3,099",
                     current: true,
 
-                    thumnile: img1,
+                    thumnile: le4,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -213,12 +354,52 @@ export let skil = {
                     price: "3,09",
                     current: true,
 
-                    thumnile: img1,
+                    thumnile: le5,
                     ratingStar: "⭐⭐⭐⭐"
 
 
                 },
-            ]
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: le6,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: le7,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: le8,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+            ],
+            btn:"Show all it Certification cources"
 
 
         },
@@ -233,7 +414,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,09",
                     current: true,
-                    thumnile: img1,
+                    thumnile: sc1,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -245,7 +426,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,099",
                     current: true,
-                    thumnile: img1,
+                    thumnile: sc2,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -257,7 +438,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,099",
                     current: true,
-                    thumnile: img1,
+                    thumnile: sc3,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -270,7 +451,7 @@ export let skil = {
                     price: "3,099",
                     current: true,
 
-                    thumnile: img1,
+                    thumnile: sc4,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -283,12 +464,52 @@ export let skil = {
                     price: "3,09",
                     current: true,
 
-                    thumnile: img1,
+                    thumnile: sc5,
                     ratingStar: "⭐⭐⭐⭐"
 
 
                 },
-            ]
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: sc6,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: sc7,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: sc8,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+            ],
+            btn:"Show all it Certification cources"
 
 
         },
@@ -303,7 +524,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,09",
                     current: true,
-                    thumnile: img1,
+                    thumnile: cm1,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -315,7 +536,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,099",
                     current: true,
-                    thumnile: img1,
+                    thumnile: cm2,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -327,7 +548,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,099",
                     current: true,
-                    thumnile: img1,
+                    thumnile: cm3,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -340,7 +561,7 @@ export let skil = {
                     price: "3,099",
                     current: true,
 
-                    thumnile: img1,
+                    thumnile: cm4,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -353,12 +574,52 @@ export let skil = {
                     price: "3,09",
                     current: true,
 
-                    thumnile: img1,
+                    thumnile: cm5,
                     ratingStar: "⭐⭐⭐⭐"
 
 
                 },
-            ]
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: cm6,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: cm7,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: cm8,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+            ],
+            btn:"Show all it Certification cources"
 
 
 
@@ -374,7 +635,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,09",
                     current: true,
-                    thumnile: img1,
+                    thumnile: bu1,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -386,7 +647,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,099",
                     current: true,
-                    thumnile: img1,
+                    thumnile: bu2,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -398,7 +659,7 @@ export let skil = {
                     ratingList: 386523,
                     price: "3,099",
                     current: true,
-                    thumnile: img1,
+                    thumnile: bu3,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -411,7 +672,7 @@ export let skil = {
                     price: "3,099",
                     current: true,
 
-                    thumnile: img1,
+                    thumnile: bu4,
                     ratingStar: "⭐⭐⭐⭐"
 
 
@@ -424,12 +685,52 @@ export let skil = {
                     price: "3,09",
                     current: true,
 
-                    thumnile: img1,
+                    thumnile: bu5,
                     ratingStar: "⭐⭐⭐⭐"
 
 
                 },
-            ]
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: bu6,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: bu7,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+                {
+                    title: "The Complete 2024 Web Development BootcampBecome a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DAppsRating: 4.7 out of 5386523 reviews61.5 total hours373 lecturesAll LevelsCurrent price: ₹3,099",
+                    author: "Dr.Angela Yu Developer and Lead",
+                    rating: 4.7,
+                    ratingList: 386523,
+                    price: "3,09",
+                    current: true,
+
+                    thumnile: bu8,
+                    ratingStar: "⭐⭐⭐⭐"
+
+
+                },
+            ],
+            btn:"Show all it Certification cources"
 
 
         }

@@ -5,3 +5,11 @@
     width: 49px ;
     background-color: purple;
 }
+.main {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.main::-webkit-scrollbar {
+    display: none; /* WebKit browsers */
+}

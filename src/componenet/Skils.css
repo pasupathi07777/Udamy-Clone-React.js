@@ -1,7 +1,7 @@
 .domine {
     border-top: none;
    
-    /* padding-right: 20px; */
+ 
 
 }
 .domine_names{
@@ -42,11 +42,12 @@
 }
 
 .domine_name {
-    border-bottom: 1px solid #D1D7DC;
+    /* border-bottom: 1px solid #D1D7DC; */
    
 }
 .domine{
-    border-top: 1px solid #D1D7DC;
+  
+    border-top: 1.5px solid #D1D7DC;
 }
 
 
@@ -103,24 +104,7 @@
 }
 
 
-@media (min-width:639px) {
-    .domine_names{
-        border-bottom:none;
-    
-    }
-    .domine{
-        border-top: none;
-        border-bottom: 1.5px solid #D1D7DC;
-        
-    }
-    
-}
-@media (min-width:1160px) {
-   .arr-1{
-    display: none;
-   }
-    
-}
+
 
 .cou__one,.con__two {
     display: flex;
@@ -147,6 +131,29 @@
 }
 
 /*  */
+
+@media (min-width:639px) {
+    .domine_names{
+        border-bottom:none;
+    
+    }
+    .domine{
+        border-top: none;
+        /* border-bottom: 1.5px solid #D1D7DC; */
+        
+    }
+    .fort{
+        border-bottom: 1.5px solid #D1D7DC;
+
+    }
+    
+}
+@media (min-width:1000px) {
+   .arr-1{
+    display: none;
+   }
+    
+}
 
 
 

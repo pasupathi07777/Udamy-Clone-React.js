@@ -15,7 +15,12 @@
     display: none;
     /* Chrome, Safari */
 }
-
+.droup{
+    position: absolute;
+    top: ;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 @media (min-width:1000px) {
 
     /* md:w-[440px] */
@@ -30,3 +35,4 @@
 }
 
 @media (min-width:1200px) {}
+

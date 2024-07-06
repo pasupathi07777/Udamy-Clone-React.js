@@ -11,7 +11,7 @@ const Story = ({ story, icons }) => {
     let leftscroll = () => {
         console.log("click")
         let box = document.querySelector(".main")
-        let width = document.querySelector(".box-1").clientWidth
+        let width = document.querySelector(".main").clientWidth
         console.log(width)
         box.scrollLeft -= width 
         setcurrent(current !== 1?current-1:1)
@@ -21,9 +21,9 @@ const Story = ({ story, icons }) => {
     let rightscroll = () => {
         let box = document.querySelector(".main")
         console.log("click")
-        let width = document.querySelector(".box-1").clientWidth
+        let width = document.querySelector(".main").clientWidth
         console.log(width)
-        box.scrollLeft += width 
+        box.scrollLeft += width
         setcurrent(current !== 4?current+1:4)
         console.log(current)
       
@@ -32,12 +32,12 @@ const Story = ({ story, icons }) => {
 
     return (
         < div className='relative h-fit bg-[#F7F9FA] overflow-hidden '>
-            <main className='main flex  pt-[32px]  flex-row  relative gap-4 sm:gap-0 overflow-x-scroll scroll-smooth sm:min-h-[540px] my-[32px] ' >
+            <main className='main flex    flex-row  relative gap-4 sm:gap-0 overflow-x-scroll scroll-smooth sm:min-h-[540px] my-[32px] ' >
                 {story.map((e, i) => {
                     return <div className="box-1 flex-shrink-0 flex w-full flex-col md:flex-row  px-[24px] gap-3 md:gap-0" key={i}>
-                        <div className="swctionOne border-none   flex flex-col justify-start gap-3 sm:pr-[24px] order-2 sm:order-1 w-full  " key={i}>
+                        <div className="swctionOne border-none min-h-[400px]   flex flex-col justify-center sm:justify-start md:justify-center sm:gap-3 sm:pr-[24px] order-2 md:order-1 w-full  " key={i}>
                             <div className="titles flex   ">
-                                <img src={e.title} alt="" />
+                                <img src={e.title} className='' alt="" />
 
                             </div>
                             <p className='font-semibold text-[24px]'>{e.about}</p>
@@ -57,8 +57,8 @@ const Story = ({ story, icons }) => {
                                 {e.btn}
                             </div>
                         </div>
-                        <div className="sectionTwo order-1 sm:order-2 flex justify-center items-center w-full ">
-                            <img src={e.img} alt="" srcSet="" className='w-full h-full' />
+                        <div className="sectionTwo order-1 md:order-2 flex justify-center items-center w-full ">
+                            <img src={e.img} alt="" srcSet="" className='w-full  h-[500px] md:h-full ' />
                         </div>
                     </div>
 
@@ -71,7 +71,7 @@ const Story = ({ story, icons }) => {
 
             <div className="boxdd absolute  w-fit hidden md:flex  md:bottom-8  md:left-5 right-0 bg-transparent z-50 bg-black   ">
                 <div className="box__1 flex  justify-center items-center  gap-3 ">
-                    <div className="icon rounded-full border border-black p-3 bg-white" onClick={leftscroll}>
+                    <div className="icon  rounded-full border border-black p-3 bg-white" onClick={leftscroll}>
                         {icons[0]}
 
                     </div>
@@ -101,3 +101,12 @@ const Story = ({ story, icons }) => {
     )
 }
 export default Story
+
+
+
+
+
+
+
+
+

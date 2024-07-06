@@ -2,20 +2,22 @@
 
 import React, { useState } from 'react'
 import './Learning.css'
+import { learning } from '../server/learning'
 
 
 
 
 const Learning = ({ learning }) => {
 
-    // cons [sum, setsum] = useState(0)
-    const [sum, setsum] = useState(0);
+  
+    let [sum, setsum] = useState(0)
+
     let leftScroll = () => {
         console.log("click")
         let box = document.querySelector(".main-box")
         let width = document.querySelector(".all-cources").clientWidth
         console.log(width)
-        box.scrollLeft -= width + 10
+        box.scrollLeft -= width 
         setsum(sum - width)
 
     }
@@ -24,7 +26,7 @@ const Learning = ({ learning }) => {
         console.log("click")
         let width = document.querySelector(".all-cources").clientWidth
         console.log(width)
-        box.scrollLeft += width + 10
+        box.scrollLeft += width
         setsum(sum + width)
 
     }
@@ -33,29 +35,22 @@ const Learning = ({ learning }) => {
 
             <h1 className='font-semibold  text-[24px] px-[24px] '>{learning.title}</h1>
             <div className="cource__video  p-0  mt-4 relative px-[23px]  ">
-                {/* {sum > 10 && <div className="leftscroll  absolute  z-50 hidden sm:block" onClick={leftScroll} >
-                    {learning.lerfArrow}
-
-                </div>}
-                <div className="rightscroll absolute  z-50 hidden sm:block" onClick={rightScroll} >
-                    {learning.rightArrow}
-
-                </div> */}
+                
 
                 {
                     learning.arrow.map((e, i) => {
                         if (i === 0) {
                             return (
                                 sum > 10 && (
-                                    <div className="leftscroll absolute z-50 hidden sm:block" onClick={leftScroll} key={i}>
-                                        {e}
+                                    <div className="leftscroll absolute z-50 hidden w-12 sm:block" onClick={leftScroll} key={i}>
+                                        <img src={e} alt="" srcset="" />
                                     </div>
                                 )
                             );
                         } else {
                             return (
-                                <div className="rightscroll absolute z-50 hidden sm:block" onClick={rightScroll} key={i}>
-                                    {e}
+                                <div className="rightscroll absolute z-50 hidden sm:block w-12" onClick={rightScroll} key={i}>
+                                    <img  src={e} alt="" />
                                 </div>
                             );
                         }
