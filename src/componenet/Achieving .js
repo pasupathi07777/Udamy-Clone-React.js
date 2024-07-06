@@ -21,7 +21,7 @@ const Achieving = ({achieving}) => {
                                 <p className='text-[12px] text-[#6A6F73]'>{e.aboutTwo}</p>
                             </div>
                         </div>
-                        <a href="#" className='text-[blue] text-[14px]'>{e.url}</a>
+                        <p className='text-[blue] text-[14px]'>{e.url}</p>
 
                     </div>
 

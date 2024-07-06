@@ -23,7 +23,7 @@ const Navbar = ({ datails }) => {
 
       <div className="categories text-[14px] px-[12px] hidden md:block  ">
 
-        <a href="#">{datails.categories}</a>
+        <p>{datails.categories}</p>
 
       </div>
 
@@ -44,19 +44,19 @@ const Navbar = ({ datails }) => {
 
       <div className="categories categories_2  text-[14px] px-[12px] hidden   ">
 
-        <a href="#">{datails.categories_2}</a>
+        <p >{datails.categories_2}</p>
 
       </div>
 
       <div className="categories categories_3 text-[14px] px-[12px] hidden    ">
 
-        <a href="#">{datails.categories_3}</a>
+        <p>{datails.categories_3}</p>
 
       </div>
 
       <div className="categories categories_4 text-[14px] px-[12px] hidden    ">
 
-        <a href="#">{datails.categories_4}</a>
+        <p>{datails.categories_4}</p>
         
       </div>
 

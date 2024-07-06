@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import './Learning.css'
-import { learning } from '../server/learning'
+
 
 
 
