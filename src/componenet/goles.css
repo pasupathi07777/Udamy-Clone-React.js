@@ -10,3 +10,14 @@
 .box-1{
     scrollbar-width: none;
 }
+/* goles.css */
+.big {
+    width: 6px;
+    height: 6px;
+    background-color: black;
+}
+
+/* Additional styling for scroll indicators, etc. */
+.dot {
+    transition: width 0.3s, height 0.3s;
+}

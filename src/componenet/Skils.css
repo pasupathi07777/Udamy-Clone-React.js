@@ -28,6 +28,7 @@
     /* Firefox */
 }
 
+
 .cource-title::-webkit-scrollbar {
     display: none;
     /* Chrome, Safari */
@@ -41,10 +42,7 @@
     color: black;
 }
 
-.domine_name {
-    /* border-bottom: 1px solid #D1D7DC; */
-   
-}
+
 .domine{
   
     border-top: 1.5px solid #D1D7DC;

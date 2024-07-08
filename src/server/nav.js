@@ -2,6 +2,11 @@ import udamy_img from "../img/udamy-img.png";
 
 
   export  let  datails = {
+    popup:{
+      popOne:["Get your team access to over 26,000 top Udemy courses, anytime, anywhere.","Try Udamy Business"],
+      popTwo:["Turn what you know into an opportunity and reach millions around the world.","Lear more"],
+      popThree:["Your cart is empty.","Keep shopping"]
+  },
 
       title: udamy_img,
       categories: "categories",

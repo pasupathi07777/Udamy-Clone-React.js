@@ -13,3 +13,12 @@
     display: none;
     /* Chrome, Safari */
 }
+.section-1 {
+     /* Hide content overflow */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer */
+}
+
+.section-1::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+}

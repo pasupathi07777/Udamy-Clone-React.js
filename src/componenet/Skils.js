@@ -94,7 +94,7 @@ const Skils = ({ skil }) => {
 
                                     <div className={`titles  text-[19px] sm:text-[16px]  text-[#6A6F73] flex justify-between sm:py-2 ${current === index ? 'sm:border-b-2 sm:border-black text-black' : 'border-none text-[#6A6F73]'}`} onClick={() => { handleSkillClick(index); }}>
                                         {course.title}
-                                        <div className={`icon ${isVisible && 'rotate-180'} flex-shrink-0 transition-all duration-500 sm:hidden`}>
+                                        <div className={`icon h-fit ${isVisible && 'rotate-180'} flex-shrink-0 transition-all duration-500 sm:hidden`}>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25L12 15.75L4.5 8.25" />
                                             </svg>
@@ -146,11 +146,15 @@ const Skils = ({ skil }) => {
 
                     <div className="arr  arr-1 hidden sm:flex absolute  justify-center items-center left-[-0px] p-1 text-blue-800 rounded-full">
 
-                        <p className={`font-semibold text-[54px] to-blue-400 ${arrowThree>9?"block":"hidden"}` }onClick={() => handleScrollThree('left')}>{"<"}</p>
+                        <p className={`font-semibold text-[54px] to-blue-400 ${arrowThree>9?"block":"hidden"}` }onClick={() => handleScrollThree('left')}>
+                            <img src={skil.normalArrow[0]} className='w-5' alt="" srcSet="" />
+                        </p>
                     </div>
                     <div className="arr arr-1 absolute hidden sm:flex   justify-center items-center right-0 p-1  rounded-full   text-blue-900">
 
-                        <p className={`font-semibold text-[54px]`} onClick={() => handleScrollThree('right')}>{">"}</p>
+                        <p className={`font-semibold text-[54px] `} onClick={() => handleScrollThree('right')}>
+                        <img src={skil.normalArrow[1]} className='w-5' alt="" srcSet="" />
+                        </p>
                     </div>
                 </div>
             </div>
@@ -236,6 +240,7 @@ const Skils = ({ skil }) => {
 };
 
 export default Skils;
+
 
 
 
