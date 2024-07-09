@@ -1,40 +1,41 @@
 // import React, { useState } from 'react'
 // import './Story.css'
-// // import imgOne from '../img/stories/story-1.png'
+
 
 
 
 
 // const Story = ({ story, icons }) => {
-   
-//     let [current, setcurrent]=useState(1)
+
+//     let [current, setcurrent] = useState(1)
 //     let leftscroll = () => {
 //         console.log("click")
 //         let box = document.querySelector(".main")
+//         console.log(box)
 //         let width = document.querySelector(".main").clientWidth
 //         console.log(width)
-//         box.scrollLeft -= width 
-//         setcurrent(current !== 1?current-1:1)
-     
+//         box.scrollLeft -= width
+//         setcurrent(current !== 1 ? current - 1 : 1)
+
 
 //     }
 //     let rightscroll = () => {
 //         let box = document.querySelector(".main")
-//         console.log("click")
+//         console.log(box)
 //         let width = document.querySelector(".main").clientWidth
 //         console.log(width)
-//         box.scrollLeft += width
-//         setcurrent(current !== 4?current+1:4)
+//         box.scrollLeft += 100
+//         setcurrent(current !== 4 ? current + 1 : 4)
 //         console.log(current)
-      
+
 
 //     }
 
 //     return (
-//         < div className='relative h-fit bg-[#F7F9FA] overflow-hidden '>
-//             <main className='main flex    flex-row  relative gap-4 sm:gap-0 overflow-x-scroll scroll-smooth sm:min-h-[540px] my-[32px] ' >
-//                 {story.map((e, i) => {
-//                     return <div className="box-1 flex-shrink-0 flex w-full flex-col md:flex-row  px-[24px] gap-3 md:gap-0" key={i}>
+//         < div className=' relative h-fit bg-[#F7F9FA]  '>
+//             <main className='main flex w-fit overflow-scroll       gap-4 sm:gap-0  scroll-smooth sm:min-h-[540px] my-[32px] ' >
+//                 {story.map((e, i) => (
+//                     <div className="box-1 flex-shrink-0 flex w-full flex-col md:flex-row  px-[24px] gap-3 md:gap-0" key={i}>
 //                         <div className="swctionOne border-none min-h-[400px]   flex flex-col justify-center sm:justify-start md:justify-center sm:gap-3 sm:pr-[24px] order-2 md:order-1 w-full  " key={i}>
 //                             <div className="titles flex   ">
 //                                 <img src={e.title} className='' alt="" />
@@ -62,7 +63,7 @@
 //                         </div>
 //                     </div>
 
-//                 })}
+//                 ))}
 
 
 
@@ -75,19 +76,19 @@
 //                         {icons[0]}
 
 //                     </div>
-//                     <div className={`dot w-3 bg-gray-500 rounded-full h-3 ${current ===1 ? "big":""}  ` }>
+//                     <div className={`dot w-3 bg-gray-500 rounded-full h-3 ${current === 1 ? "big" : ""}  `}>
 
 //                     </div>
-//                     <div className={`dot w-3 bg-gray-500 rounded-full h-3 ${current ===2 ? "big":""}  ` }>
+//                     <div className={`dot w-3 bg-gray-500 rounded-full h-3 ${current === 2 ? "big" : ""}  `}>
 
 //                     </div>
-//                     <div className={`dot w-3 bg-gray-500 rounded-full h-3 ${current ===3 ? "big":""}  ` }>
+//                     <div className={`dot w-3 bg-gray-500 rounded-full h-3 ${current === 3 ? "big" : ""}  `}>
 
 //                     </div>
-//                     <div className={`dot w-3 bg-gray-500 rounded-full h-3 ${current ===4 ? "big":""}  ` }>
+//                     <div className={`dot w-3 bg-gray-500 rounded-full h-3 ${current === 4 ? "big" : ""}  `}>
 
 //                     </div>
-                   
+
 
 //                     <div className="icon rounded-full border border-black p-3 bg-white " onClick={rightscroll}>
 //                         {icons[1]}
@@ -113,21 +114,25 @@ const Story = ({ story, icons }) => {
     const [current, setCurrent] = useState(1);
 
     const leftScroll = () => {
-        const box = document.querySelector(".main");
+        console.log("left")
+        const box = document.querySelector(".main-1");
         const width = box.clientWidth;
+        console.log(box)
         box.scrollLeft -= width;
         setCurrent(current !== 1 ? current - 1 : 1);
     };
 
     const rightScroll = () => {
-        const box = document.querySelector(".main");
+        console.log("right")
+        const box = document.querySelector(".main-1");
+        console.log(box)
         const width = box.clientWidth;
         box.scrollLeft += width;
         setCurrent(current !== 4 ? current + 1 : 4);
     };
 
     useEffect(() => {
-        const box = document.querySelector(".main");
+        const box = document.querySelector(".main-1");
         const handleScroll = () => {
             const width = box.clientWidth;
             const newCurrent = Math.round(box.scrollLeft / width) + 1;
@@ -141,7 +146,7 @@ const Story = ({ story, icons }) => {
 
     return (
         <div className='relative h-fit bg-[#F7F9FA] overflow-hidden'>
-            <main className='main flex flex-row relative gap-4 sm:gap-0 overflow-x-scroll scroll-smooth sm:min-h-[540px] my-[32px]'>
+            <main className='main-1 flex flex-row relative gap-4 sm:gap-0 overflow-x-scroll scroll-smooth sm:min-h-[540px] my-[32px]'>
                 {story.map((e, i) => (
                     <div className="box-1 flex-shrink-0 flex w-full flex-col md:flex-row px-[24px] gap-3 md:gap-0" key={i}>
                         <div className="sectionOne border-none min-h-[400px] flex flex-col justify-center sm:justify-start md:justify-center sm:gap-3 sm:pr-[24px] order-2 md:order-1 w-full">
@@ -159,7 +164,7 @@ const Story = ({ story, icons }) => {
                                     <p>{e.percentage.perTwoAbout}</p>
                                 </div>
                             </div>
-                            <div className="btn mt-2 w-full sm:w-fit text-center bg-black text-white p-2 font-semibold">
+                            <div className="btn cursor-pointer mt-2 w-full sm:w-fit text-center bg-black text-white p-2 font-semibold">
                                 {e.btn}
                             </div>
                         </div>
@@ -195,13 +200,6 @@ const Story = ({ story, icons }) => {
 };
 
 export default Story;
-
-
-
-
-
-
-
 
 
 

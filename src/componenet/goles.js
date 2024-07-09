@@ -113,12 +113,12 @@ const Goles = ({ goles }) => {
     }, []);
 
     return (
-        <main className='bg-[#F7F9FA] py-[32px] md:flex relative'>
-            <div className="box-one px-[24px] md:hidden">
-                <h1 className='font-semibold text-[32px]'>{goles.title}</h1>
+        <main className='bg-[#F7F9FA] py-[32px] md:flex relative '>
+            <div className="box-one px-[24px] md:absolute  ">
+                <h1 className='font-semibold text-[32px] flex-shrink-0'>{goles.title}</h1>
             </div>
 
-            <div className="box-1 overflow-x-scroll md:overflow-hidden flex w-full md:order-2 items-center">
+            <div className="box-1 overflow-x-scroll md:overflow-hidden flex w-full md:order-2 items-center  ">
                 {goles.foucus.map((e, i) => (
                     <div className={`total flex-shrink-0 w-full ${i === current ? "md:block" : "md:hidden"}`} key={i}>
                         <img src={e.img} alt="goles" />
@@ -137,11 +137,11 @@ const Goles = ({ goles }) => {
                 ))}
             </div>
 
-            <div className="box-2 w-full md:order-1 hidden md:block">
-                <div className="section-one flex flex-col gap-4 justify-start order-2 md:order-1 mx-[23px] px-[1px]">
-                    <h1 className='font-semibold text-[32px] hidden md:block'>{goles.title}</h1>
+            <div className="box-2 w-full md:order-1 hidden md:block md:mt-[60px]  ">
+                <div className="section-one flex flex-col gap-4 justify-start order-2 md:order-1 py-1">
+                    {/* <h1 className='font-semibold text-[32px] hidden md:block mx-[24px] flex-shrink-0'>{goles.title}</h1> */}
                     {goles.foucus.map((e, i) => (
-                        <div key={i} className={`box ${current === i ? "box-sh" : ""} flex p-[24px] gap-3 rounded-xl md:min-h-[155px] justify-center items-center mt-3 flex-shrink-0 cursor-pointer`} onClick={() => setCurrent(i)}>
+                        <div key={i} className={`box ${current === i ? "box-sh" : ""} flex p-[24px] mx-[24px]  gap-3 rounded-xl md:min-h-[155px] justify-center items-center mt-3 flex-shrink-0 cursor-pointer`} onClick={() => setCurrent(i)}>
                             <div className="sec-one justify-center items-center hidden md:flex">
                                 <img src={e.logo} className='w-32' alt="" />
                             </div>

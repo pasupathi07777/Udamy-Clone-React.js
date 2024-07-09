@@ -1,15 +1,13 @@
-/* .persentage__sone{
-    border-bottom: 1px solid #D1D7DC;
-} */
+
 .big{
     width: 49px ;
     background-color: purple;
 }
-.main {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
+.main-1 {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
 }
 
-.main::-webkit-scrollbar {
-    display: none; /* WebKit browsers */
+.main-1::-webkit-scrollbar {
+    display: none;
 }

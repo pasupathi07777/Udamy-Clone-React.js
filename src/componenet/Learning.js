@@ -42,14 +42,14 @@ const Learning = ({ learning }) => {
                         if (i === 0) {
                             return (
                                 sum > 10 && (
-                                    <div className="leftscroll absolute z-50 hidden w-12 sm:block" onClick={leftScroll} key={i}>
+                                    <div className="leftscroll cursor-pointer absolute z-50 hidden w-12 sm:block" onClick={leftScroll} key={i}>
                                         <img src={e} alt="" srcset="" />
                                     </div>
                                 )
                             );
                         } else {
                             return (
-                                <div className="rightscroll absolute z-50 hidden sm:block w-12" onClick={rightScroll} key={i}>
+                                <div className="rightscroll cursor-pointer absolute z-50 hidden sm:block w-12" onClick={rightScroll} key={i}>
                                     <img  src={e} alt="" />
                                 </div>
                             );

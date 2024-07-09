@@ -29,8 +29,9 @@ import { learning } from './server/learning.js'
 import { goles } from './server/goles.js'
 import { navDetails } from './server/sidenav.js'
 import Sidenav from './componenet/Sidenav.js';
-import {  useState } from 'react';
+import { useState } from 'react';
 import Bgblur from './componenet/Bgblur.js';
+
 
 
 
@@ -39,9 +40,9 @@ function App() {
   let [nav, setnav] = useState(0)
   let [sit, setsit] = useState(0)
   let ccc = () => {
-   
+
     setTimeout(() => {
-   
+
       // Add your logic here
       setsit(1)
     }, 1000);
@@ -54,7 +55,7 @@ function App() {
     <div className="App">
       <Navbar datails={datails} setnav={setnav} ccc={ccc} />
       <Sidenav navDetails={navDetails} nav={nav} setnav={setnav} sit={sit} setsit={setsit} />
-      <Bgblur nav={nav}/>
+      <Bgblur nav={nav} />
       <Banner banners={banners} />
       <Skils skil={skil} />
 
@@ -68,6 +69,7 @@ function App() {
       <Trending treanding={treanding} />
       <Learning learning={learning} />
       <Story story={story} icons={icons} />
+
       <Footer footer={footer} />
 
     </div>

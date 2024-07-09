@@ -195,12 +195,12 @@ const Banner = ({ banners }) => {
 
             ))}
 
-            <div className="droup top-[240px] sm:top-[340px] md:top-[390px] z-40 w-10 flex gap-1">
+            <div className="droup top-[240px] sm:top-[340px] md:top-[390px] z-30 w-10 flex gap-1">
 
                 {banners.arrows.map((_, i) => (
 
                     <div
-                        className={`dot ${i === dot ? "bg-slate-400" : "bg-white"} w-3 h-3 rounded-full`}
+                        className={`dot ${i === dot ? "bg-black" : "bg-white"} w-3 h-3 rounded-full`}
                         key={i} onClick={() => { i === 0 ? left() : right() }}
 
                     ></div>
