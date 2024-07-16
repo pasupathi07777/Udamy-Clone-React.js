@@ -92,7 +92,7 @@ const Skils = ({ skil }) => {
                             return (
                                 <div className={` domine_names flex-shrink-0  py-3 sm:py-0 h-fit  flex flex-col gap-3 font-semibold ${isVisible ? '' : ''} relative`} key={index}>
 
-                                    <div className={`titles  text-[19px] sm:text-[16px]  text-[#6A6F73] flex justify-between sm:py-2 ${current === index ? 'sm:border-b-2 sm:border-black text-black' : 'border-none text-[#6A6F73]'}`} onClick={() => { handleSkillClick(index); }}>
+                                    <div className={`titles cursor-pointer  text-[19px] sm:text-[16px]  text-[#6A6F73] flex justify-between sm:py-2 ${current === index ? 'sm:border-b-2 sm:border-black text-black' : 'border-none text-[#6A6F73]'}`} onClick={() => { handleSkillClick(index); }}>
                                         {course.title}
                                         <div className={`icon h-fit ${isVisible && 'rotate-180'} arrow h-full   flex-shrink-0 transition-all duration-500 sm:hidden`}>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
