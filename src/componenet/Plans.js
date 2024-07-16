@@ -23,9 +23,9 @@ const Plans = ({ plan }) => {
                     return (
                         <div className="plan-box contain rounded-xl w-full" key={i} style={{ borderTop: `8px solid ${e.color}` }}>
                             <div className="header px-[24px] py-[16px] bg-[#F7F9FA]" onClick={() => handleToggle(i)}>
-                                <div className='flex justify-between'>
+                                <div className='flex justify-between items-center '>
                                     <h2>{e.title}</h2>
-                                    <p className={`arrow md:hidden ${isHidden && 'rotate-180'}`}>{e.arrow}</p>
+                                    <p className={`arrow md:hidden  ${isHidden && 'rotate-180'}  transition-all duration-500`}>{e.arrow}</p>
                                 </div>
                                 <small className='text-[12px] text-[#6A6F73]'>{e.option}</small>
                                 <div className='flex flex-col sm:flex-row gap-2 mt-2 text-[#6A6F73]'>
@@ -33,7 +33,7 @@ const Plans = ({ plan }) => {
                                     <p>{e.peopleCount}</p>
                                 </div>
                             </div>
-                            <div className={`body ${!isHidden ? 'hidden' : 'flex'} p-[24px] flex-col gap-4 md:flex`}>
+                            <div className={`body ${!isHidden ? 'hidden' : 'flex'} transition-all duration-1000 p-[24px] flex-col gap-4 md:flex`}>
                                 <div>
                                     <h2 className='font-semibold'>{e.planePrice}</h2>
                                     <small className='text-[12px]'>{e.subAlert}</small>
