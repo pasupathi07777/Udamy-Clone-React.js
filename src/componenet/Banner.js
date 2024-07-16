@@ -220,7 +220,7 @@ const Banner = ({ banners }) => {
 
                         <img src={item.image} alt="Banner" className="banner-img w-full h-[250px] sm:h-[350px] md:h-[400px] object-cover" />
 
-                        <div className="banner-box sm:bg-white w-full h-fit sm:w-[340px] p-[24px] sm:shadow-xl z-50 sm:absolute top-[30px] left-[70px] cursor-pointer flex flex-col">
+                        <div className="banner-box sm:bg-white w-full h-fit sm:w-[340px] p-[24px] sm:shadow-xl z-30 sm:absolute top-[30px] left-[70px] cursor-pointer flex flex-col">
 
                             <h1 className="text-[24px] font-semibold">{item.title}</h1>
 
