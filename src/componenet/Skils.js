@@ -94,10 +94,11 @@ const Skils = ({ skil }) => {
 
                                     <div className={`titles  text-[19px] sm:text-[16px]  text-[#6A6F73] flex justify-between sm:py-2 ${current === index ? 'sm:border-b-2 sm:border-black text-black' : 'border-none text-[#6A6F73]'}`} onClick={() => { handleSkillClick(index); }}>
                                         {course.title}
-                                        <div className={`icon h-fit ${isVisible && 'rotate-180'} arrow  h-full flex-shrink-0 transition-all duration-500 sm:hidden`}>
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                        <div className={`icon h-fit ${isVisible && 'rotate-180'} arrow h-full   flex-shrink-0 transition-all duration-500 sm:hidden`}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25L12 15.75L4.5 8.25" />
                                             </svg>
+                                          
                                         </div>
                                     </div>
 

@@ -149,7 +149,7 @@ const Story = ({ story, icons }) => {
             <main className='main-1 flex flex-row relative gap-4 sm:gap-0 overflow-x-scroll scroll-smooth sm:min-h-[540px]  my-[32px]'>
                 {story.map((e, i) => (
                     <div className="box-1 flex-shrink-0 flex w-full flex-col md:flex-row px-[24px] gap-4 sm:gap-4 md:gap-0" key={i}>
-                        <div className="sectionOne border-none min-h-[370px]    flex flex-col justify-center sm:justify-start md:justify-center sm:gap-3 sm:pr-[24px] order-2 md:order-1 w-full">
+                        <div className="sectionOne border-none min-h-[380px]    flex flex-col justify-center sm:justify-start md:justify-center sm:gap-3 sm:pr-[24px] order-2 md:order-1 w-full">
                             <div className="titles flex">
                                 <img src={e.title} alt="" />
                             </div>
