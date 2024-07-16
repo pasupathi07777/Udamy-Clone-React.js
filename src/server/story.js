@@ -43,13 +43,13 @@ export let story = [
         },
         btn: "Read full story ->",
         img: imgtwo
-    },
+    },//increase in employee enrollments for
     {
         title: titleThree,
         about: "Through Skill- Building and Leadership Development",
         percentage: {
         perOne: "4,800+",
-        peroneAbout: "increase in employee enrollments for professional development courses",
+        peroneAbout: " professional development courses",
         perTwo: "65%",
         perTwoAbout: "revenue growth supported by a business model backed by learning",
     },

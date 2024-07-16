@@ -145,26 +145,27 @@ const Story = ({ story, icons }) => {
     }, []);
 
     return (
-        <div className='relative h-fit bg-[#F7F9FA] overflow-hidden'>
-            <main className='main-1 flex flex-row relative gap-4 sm:gap-0 overflow-x-scroll scroll-smooth sm:min-h-[540px] my-[32px]'>
+        <div className='relative h-fit bg-[#F7F9FA] overflow-hidden pb-[32px] md:pb-0 '>
+            <main className='main-1 flex flex-row relative gap-4 sm:gap-0 overflow-x-scroll scroll-smooth sm:min-h-[540px]  my-[32px]'>
                 {story.map((e, i) => (
-                    <div className="box-1 flex-shrink-0 flex w-full flex-col md:flex-row px-[24px] gap-3 md:gap-0" key={i}>
-                        <div className="sectionOne border-none min-h-[400px] flex flex-col justify-center sm:justify-start md:justify-center sm:gap-3 sm:pr-[24px] order-2 md:order-1 w-full">
+                    <div className="box-1 flex-shrink-0 flex w-full flex-col md:flex-row px-[24px] gap-4 sm:gap-4 md:gap-0" key={i}>
+                        <div className="sectionOne border-none min-h-[370px]    flex flex-col justify-center sm:justify-start md:justify-center sm:gap-3 sm:pr-[24px] order-2 md:order-1 w-full">
                             <div className="titles flex">
                                 <img src={e.title} alt="" />
                             </div>
                             <p className='font-semibold text-[24px]'>{e.about}</p>
                             <div className="percentage flex gap-7">
-                                <div className="percentage__one border-black border-b-2 py-[10px] w-full">
+                                <div className="percentage__one border-black  py-[10px] w-full">
                                     <h1 className='font-semibold text-[32px]'>{e.percentage.perOne}</h1>
                                     <p>{e.percentage.peroneAbout}</p>
                                 </div>
-                                <div className="percentage__two border-black border-b-2 py-[10px] w-full">
+                                <div className="percentage__two border-black  py-[10px] w-full"> 
+                                  
                                     <h1 className='font-semibold text-[32px]'>{e.percentage.perTwo}</h1>
                                     <p>{e.percentage.perTwoAbout}</p>
                                 </div>
                             </div>
-                            <div className="btn cursor-pointer mt-2 w-full sm:w-fit text-center bg-black text-white p-2 font-semibold">
+                            <div className="btn cursor-pointer md:mt-2 w-full md:w-fit text-center mt-auto bg-black text-white p-2 font-semibold">
                                 {e.btn}
                             </div>
                         </div>
@@ -190,7 +191,7 @@ const Story = ({ story, icons }) => {
             </div>
 
             {/* Mobile Scroll Indicator */}
-            <div className="mobile-indicator flex md:hidden justify-center absolute bottom-2 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-50 gap-2">
+            <div className="mobile-indicator   sm:my-0 flex md:hidden justify-center absolute bottom-7 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-50 gap-2">
                 {[1, 2, 3, 4].map((i) => (
                     <div key={i}   className={`dot w-3 h-3 ${current === i ? "bg-black" : "bg-gray-300"} rounded-full`}></div>
                 ))}

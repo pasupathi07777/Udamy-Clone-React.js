@@ -76,7 +76,8 @@
 .domine,
 .arr,
 .shot,
-.fort{
+.fort,
+.arrow{
    
    
     scrollbar-width: none;
@@ -89,7 +90,8 @@
 .domine::-webkit-scrollbar,
 .arr::-webkit-scrollbar,
 .shot::-webkit-scrollbar,
-.fort::-webkit-scrollbar{
+.fort::-webkit-scrollbar,
+.arrow::-webkit-scrollbar{
 
     display: none;
 }
