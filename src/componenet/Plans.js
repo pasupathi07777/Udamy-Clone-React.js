@@ -19,9 +19,9 @@ const Plans = ({ plan }) => {
             <div className="section-three flex flex-col md:flex-row md:gap-3 mt-8 px-[24px] pb-1">
                 {plan.plans.map((e, i) => {
                     const isHidden = activeIndex === i;
-                    console.log(isHidden+"manipulate")
+                    console.log(isHidden+"manipulate")// e.color
                     return (
-                        <div className="plan-box contain rounded-xl w-full" key={i} style={{ borderTop: `8px solid ${e.color}` }}>
+                        <div className="plan-box contain rounded-xl w-full" key={i} style={{ borderTop: `8px solid ${isHidden?"#A435F0" :"#5022C3"}` }}>
                             <div className="header px-[24px] py-[16px] bg-[#F7F9FA]" onClick={() => handleToggle(i)}>
                                 <div className='flex justify-between items-center '>
                                     <h2>{e.title}</h2>
